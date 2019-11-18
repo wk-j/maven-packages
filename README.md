@@ -1,13 +1,15 @@
 ## Maven
 
 ```bash
-mvn exec:java -Dexec.mainClass="wk.Program"
-mvn package
+mvn exec:java -Dexec.mainClass="wk.Program" \
+    -s lib/app/settings.xml \
+    -f lib/app/pom.xml
 
-mvn deploy -s settings.xml \
-    -Dregistry=https://maven.pkg.github.com/wk-j
+mvn package \
+    -s lib/app/settings.xml \
+    -f lib/app/pom.xml
 
 mvn deploy \
-    -s settings.xml \
-    -Drepository=github
+    -s lib/app/settings.xml \
+    -f lib/app/pom.xml
 ```
