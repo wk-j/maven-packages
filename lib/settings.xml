@@ -6,7 +6,7 @@
             <password>${GITHUB_TOKEN}</password>
         </server>
     </servers>
-
+    <!--
     <activeProfiles>
         <activeProfile>GitHub</activeProfile>
     </activeProfiles>
@@ -37,5 +37,6 @@
                 </repository>
             </repositories>
         </profile>
-    </profiles>
+    </profiles> -->
+
 </settings>
